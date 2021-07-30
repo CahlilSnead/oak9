@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+    <script type="text/javascript">
+        function football(){
+         var yard= document.getElementById("yards").value;
+         var game= document.getElementById("games").value;
+         var average= yard/game;
+         document.getElementById("textbox").innerHTML = 'total yards per game: '
+         rushingYardCalculator.ttl.value=average;
+
+
+        }
+    </script>
+     <style>
+    
+        body{
+            text-align:right;
+            background-color:black;
+        }
+        
+        h1 {
+            text-align:center;
+            color:yellow;
+        }
+        
+       img{
+           margin-left:auto;
+           margin-right:auto;
+           //width:50%;
+           display:block;
+       } 
+        
+        ul{
+            list-style:none;
+            display:inline-flex;
+        }
+        
+        a{
+            border: 5px groove yellow;
+            text-decoration:none;
+            color:white;
+        }
+        
+        li{
+            margin:10px;
+        }
+        h5{
+            color:yellow;
+            text-align:center;
+        }
+
+        label{
+            color: yellow;
+        }
+
+        form{
+            text-align: center;
+        }
+    </style>
+    
+    <head>
+        <title>Rushing yard calculator</title>
+    </head>
+    
+    <body>
+        <h1>Rushing yard calculator</h1>
+        
+        <ul>
+           <li><a href="index.html">Home</a></li>
+           <li><a href="Aboutme.html">About me</a></li>
+           <li><a href="Leadership.html">Leadership</a></li>
+           <li><a href="Teamhistory.html">Team history</a></li>
+           <li><a href="form.html">rushing yard calculator</a></li>
+        </ul>
+        
+<img src="">
+        <h5> </h5>
+       
+       <form name="rushingYardCalculator">
+            <label for="draft">Enter total yards</label>
+            <input type="text" name="ttlYards" id="yards" value=""><br>
+            <label for="draft">Enter total games played</label>
+            <input type="text" name="ttlGamesPlayed" id="games"><br>
+            <label for="draft" name = "red" id="textbox"></label>
+            <input type="text" name="ttl" id="ttlYardsPerGame">
+            <p><input type="button" value ="Submit" onclick="football()"></p>
+
+        </form>
+
+
+
+
+
+
+
+    </body>
+    
+</html>
